@@ -3,7 +3,7 @@ import pymongo
 
 def get_mongo_client():
     try:
-        client = pymongo.MongoClient("mongodb://mongo:27017/")
+        client = pymongo.MongoClient("mongodb://localhost:27017/")
         return client
     except pymongo.errors.ConnectionFailure as e:
         print(f"Error de conexión con MongoDB: {e}")
