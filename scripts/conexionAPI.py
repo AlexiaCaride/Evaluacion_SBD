@@ -44,7 +44,7 @@ def fetch_and_store_data():
 fetch_and_store_data()
 
 # Programar la ejecución cada 30 segundos
-schedule.every(30).seconds.do(fetch_and_store_data)
+schedule.every(3).minutes.do(fetch_and_store_data)
 
 # Mantener el script en ejecución
 try:
