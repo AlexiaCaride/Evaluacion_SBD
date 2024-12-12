@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  # Servicio de MongoDB
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    ports:
+      - "27017:27017"
+
+
+  # Servicio para ejecutar conexionAPI.py
+  conexion_api_executor:
+    image: conexionapi
+    container_name: conexion_api_executor
+    depends_on:
+      - mongo
+
+
