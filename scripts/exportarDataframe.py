@@ -22,19 +22,18 @@ try:
 
     data = []
     for doc in documents:
-        for station in doc['network']['stations']:
-            data.append({
-                "id": station.get("id"),
-                "name": station.get("name"),
-                "timestamp": doc.get("timestamp"),
-                "free_bikes": station.get("free_bikes"),
-                "empty_slots": station.get("empty_slots"),
-                "uid": station.get("extra", {}).get("uid"),
-                "last_updated": station.get("extra", {}).get("last_updated"),
-                "slots": station.get("extra", {}).get("slots"),
-                "normal_bikes": station.get("extra", {}).get("normal_bikes"),
-                "ebikes": station.get("extra", {}).get("ebikes")
-            })
+        data.append({
+        "id": doc.get("id"),
+        "name": doc.get("name"),
+        "timestamp": doc.get("timestamp"),
+        "free_bikes": doc.get("free_bikes"),
+        "empty_slots": doc.get("empty_slots"),
+        "uid": doc.get("extra", {}).get("uid"),
+        "last_updated": doc.get("extra", {}).get("last_updated"),
+        "slots": doc.get("extra", {}).get("slots"),
+        "normal_bikes": doc.get("extra", {}).get("normal_bikes"),
+        "ebikes": doc.get("extra", {}).get("ebikes")
+    })
 
     df = pd.DataFrame(data)
 
