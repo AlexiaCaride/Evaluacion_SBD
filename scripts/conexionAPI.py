@@ -71,6 +71,5 @@ try:
         schedule.run_pending()  # Ejecuta las tareas programadas si es necesario
         time.sleep(1)  # Espera 1 segundo antes de comprobar de nuevo
 except KeyboardInterrupt:
-    # Aquí manejamos la desconexión manual
     print("\nDesconexión manual detectada. El script fue detenido correctamente.")
 

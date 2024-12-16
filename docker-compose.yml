@@ -11,7 +11,7 @@ services:
 
   # Servicio para ejecutar conexionAPI.py
   conexion_api_executor:
-    image: conexionapi
+    image: alexiacaride/conexionapi:latest
     container_name: conexion_api_executor
     depends_on:
       - mongo
