@@ -49,7 +49,7 @@ def fetch_and_store_data(collection):
                 station['timestamp'] = timestamp
 
             # Guardar las estaciones en MongoDB
-            result = collection.insert_many(stations)  # Insertar múltiples estaciones
+            result = collection.insert_many(stations)  
             print(f"Se han insertado {len(result.inserted_ids)} estaciones en MongoDB con timestamp: {timestamp}")
         else:
             print("No se encontraron estaciones en la respuesta.")
