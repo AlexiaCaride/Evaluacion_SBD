@@ -32,7 +32,7 @@ def fetch_and_store_data(collection):
     try:
         # Realizar solicitud GET a la API
         response = requests.get(url)
-        response.raise_for_status()  # Lanza un error si la respuesta no es exitosa
+        response.raise_for_status() 
 
         # Obtener los datos de la API
         data = response.json()
