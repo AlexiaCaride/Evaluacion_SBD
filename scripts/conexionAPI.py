@@ -68,7 +68,7 @@ schedule.every(3).minutes.do(fetch_and_store_data, collection=collection)
 # Mantener el script en ejecución
 try:
     while True:
-        schedule.run_pending()  # Ejecuta las tareas programadas si es necesario
+        schedule.run_pending()  
         time.sleep(1) 
 except KeyboardInterrupt:
     print("\nDesconexión manual detectada. El script fue detenido correctamente.")
