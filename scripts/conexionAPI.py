@@ -69,7 +69,7 @@ schedule.every(3).minutes.do(fetch_and_store_data, collection=collection)
 try:
     while True:
         schedule.run_pending()  # Ejecuta las tareas programadas si es necesario
-        time.sleep(1)  # Espera 1 segundo antes de comprobar de nuevo
+        time.sleep(1) 
 except KeyboardInterrupt:
     print("\nDesconexión manual detectada. El script fue detenido correctamente.")
 
