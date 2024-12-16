@@ -26,7 +26,6 @@ else:
 
 # Función para obtener y almacenar los datos
 def fetch_and_store_data(collection):
-    # URL de la API
     url = "https://api.citybik.es/v2/networks/bicicorunha"
 
     try:
