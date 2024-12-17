@@ -1,4 +1,4 @@
-# Exercicio: Desenvolvemento e integración de scripts en Python
+# Ejercicio: Desarrollo e integración de scripts en Python
 
 ## Descrición
 
