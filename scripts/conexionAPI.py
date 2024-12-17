@@ -24,7 +24,7 @@ else:
     print("No se pudo conectar a MongoDB.")
     exit(1)
 
-# Función para obtener y almacenar los datos
+# Función para obtener y almacenar los datos 
 def fetch_and_store_data(collection):
     url = "https://api.citybik.es/v2/networks/bicicorunha"
 
