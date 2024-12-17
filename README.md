@@ -1,6 +1,6 @@
 # Ejercicio: Desarrollo e integración de scripts en Python
 
-## Descrición
+## Descripción
 
 El objectivo de este ejercicio es desarrollar dos scripts en Python que interactúen con una API, una base de datos MongoDB y diversas herramientas para el manejo de datos. Además, se incluye opciones avanzadas para mejorar la funcionalidad e integración de la solución.
 
